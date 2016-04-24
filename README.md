@@ -1,28 +1,15 @@
-== README
+# My Wino Friends
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## General Assembly WDI6
 
-Things you may want to cover:
+### April 29 2016
 
-* Ruby version
+_Summary:_
 
-* System dependencies
+Hello! This is my second app as a student at General Assembly.
 
-* Configuration
+_My Wino Friends:_
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+My Wino Friends is a social networking app that allows individuals to share their wines.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
