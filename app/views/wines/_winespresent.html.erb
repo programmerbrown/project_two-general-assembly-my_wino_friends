@@ -1,0 +1,11 @@
+
+<% @wines.each do |wine| %>
+  <hr>
+  <%= image_tag(wine.wine_url, size: "75x75") %><br>
+  <%= "Name: #{wine.name}" %><br>
+  <%= "Year: #{wine.year}" %><br>
+  <%= "Description: #{wine.description}" %><br>
+  <button>Edit</button>
+  <button>Delete</button>
+<% end %>
+

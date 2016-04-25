@@ -1,0 +1,24 @@
+<%= form_for @wine do |f| %>
+  <%= f.label "Name" %>
+  <%= f.text_field :name %><br>
+
+  <%= f.label "Last Name" %>
+  <%= f.text_field :last_name %><br>
+
+  <%= f.label "Email" %>
+  <%= f.text_field :email %><br>
+
+  <%= f.label "City" %>
+  <%= f.text_field :city %><br>
+
+  <%= f.label "State" %>
+  <%= f.text_field :state %><br>
+
+  <%= f.label "Country" %>
+  <%= f.text_field :country %><br>
+
+  <%= f.label "Picture URL" %>
+  <%= f.text_field :picture_url %><br>
+
+  <%= f.submit "Sign Me Up!" %>
+<% end %>
