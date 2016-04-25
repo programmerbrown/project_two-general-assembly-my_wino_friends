@@ -23,3 +23,7 @@
 
   <%= f.submit "Edit!" %>
 <% end %>
+<br>
+<%= form_for @user, html: {method: "delete"} do |f| %>
+  <%= f.submit "DELETE!" %>
+<% end %>
