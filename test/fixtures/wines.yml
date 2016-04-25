@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  year: 1
+  description: MyText
+  wine_url: MyString
+
+two:
+  name: MyString
+  year: 1
+  description: MyText
+  wine_url: MyString
