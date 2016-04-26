@@ -10,6 +10,8 @@ class WinesController < ApplicationController
   end
 
   def new
+    @user = User.find(params[:user_id])
+    @wine = Wine.new
   end
 
   def create
