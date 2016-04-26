@@ -1,0 +1,17 @@
+<%= render "navigation" %>
+
+<%= form_for [@user, @wine] do |f| %>
+  <%= f.label "Name" %><br>
+  <%= f.text_field :name %><br>
+
+  <%= f.label "Year" %><br>
+  <%= f.text_field :year %><br>
+
+  <%= f.label "Description" %><br>
+  <%= f.text_field :description %><br>
+
+  <%= f.label "Wine Picture URL" %><br>
+  <%= f.text_field :wine_url %><br>
+
+  <%= f.submit "Save" %>
+<% end %>

@@ -21,9 +21,16 @@ class WinesController < ApplicationController
   end
 
   def edit
+    @user = User.find(params[:user_id])
+    @wine = @user.wines.find(params[:id])
   end
 
   def update
+    @user = User.find(params[:user_id])
+    @wine = Wine.find(params[:id])
+    @wine.update(wine_params)
+
+    redirect_to user_wines_path(@user)
   end
 
   def destroy
