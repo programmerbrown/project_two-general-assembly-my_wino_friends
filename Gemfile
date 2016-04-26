@@ -28,6 +28,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'pg'
 
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
 # Use Unicorn as the app server
 # gem 'unicorn'
 

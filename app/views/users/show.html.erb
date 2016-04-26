@@ -4,4 +4,11 @@
 <h2><%= "#{@user.city}, #{@user.state}" %></h2>
 <h2><%= "#{@user.country}" %></h2>
 <%= link_to "See All My Wines...", user_wines_path(@user) %><br>
+<% if !@wines.empty? %>
+  <% @wines.each do |wine| %>
+    <%= "#{wine.name} #{wine.year}" %><br>
+  <% end %>
+<% else %>
+  <h3>No wines are present.</h3>
+<% end %>
 <%= link_to "See All My Friends...", "#" %><br>

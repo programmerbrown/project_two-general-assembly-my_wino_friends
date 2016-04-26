@@ -9,6 +9,10 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @wines = []
+    @wines << @user.wines.first if @user.wines.first
+    @wines << @user.wines.offset(1).first if @user.wines.offset(1).first
+    @wines << @user.wines.offset(2).first if @user.wines.offset(2).first
   end
 
   def create
