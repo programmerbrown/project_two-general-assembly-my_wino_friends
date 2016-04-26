@@ -2,8 +2,8 @@
 <nav>
   <ul>
     <li>My Wino Friends</li>
-    <li><%= link_to "Profile", "#" %></li>
-    <li><%= link_to "Wines", "#" %></li>
+    <li><%= link_to "Profile", user_path(@user) %></li>
+    <li><%= link_to "Wines", user_wines_path(@user) %></li>
     <li><%= link_to "Friends", "#" %></li>
     <li><%= link_to image_tag("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-gear-128.png", size: "25x25"), edit_user_path(@user) %></li>
   </ul>

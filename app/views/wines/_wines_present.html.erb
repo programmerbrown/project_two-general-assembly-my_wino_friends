@@ -5,7 +5,7 @@
   <%= "Name: #{wine.name}" %><br>
   <%= "Year: #{wine.year}" %><br>
   <%= "Description: #{wine.description}" %><br>
-  <button><%= link_to "Edit", edit_user_wine_path(@user, wine) %></button>
+  <%= button_to "Edit", edit_user_wine_path(@user, wine), class: "button", method: "get" %>
   <%= button_to "Delete", user_wine_path(@user, wine), class: "button", method: "delete" %>
 <% end %>
 
