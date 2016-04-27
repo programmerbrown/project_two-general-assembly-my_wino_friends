@@ -29,6 +29,9 @@ gem 'bcrypt', '~> 3.1.7'
 # Use PostgreSQL for my development, test environments
 gem 'pg'
 
+# Devise gem for user authentication
+gem 'devise'
+
 # Incorporates Bootstrap CSS into my application
 gem 'bootstrap-sass'
 # Use Unicorn as the app server
