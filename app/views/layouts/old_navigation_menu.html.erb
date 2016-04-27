@@ -1,0 +1,15 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">My Wino Friends</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><%= link_to "Profile", user_path(@user) %></li>
+      <li><%= link_to "Wines", user_wines_path(@user) %></li>
+      <li><%= link_to "Friends", "#" %></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to '<span class="glyphicon glyphicon-cog" ></span>'.html_safe, edit_user_path(@user) %></li>
+    </ul>
+  </div>
+</nav>

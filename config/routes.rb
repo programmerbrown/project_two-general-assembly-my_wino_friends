@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  devise_for :users
+  root to: 'static_pages#home'
+  match '/about', to: 'static_pages#about', via: 'get'
 
-  root 'users#new'
+  devise_for :users
 
   resources :users do
     resources :wines
