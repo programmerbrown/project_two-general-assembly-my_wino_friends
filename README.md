@@ -17,6 +17,7 @@ _To-Do List:_
 * Find an icon for the Account Settings page that I can load in my application
 * Redirect from '/users' to somewhere else...the '/users' should not be accessible
 * You need to put in some code to handle the case when a url is broken or not present
+* Add a table to the wine list
 
 
 

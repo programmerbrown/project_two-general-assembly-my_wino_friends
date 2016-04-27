@@ -1,11 +1,21 @@
-
-<% @wines.each do |wine| %>
-  <hr>
-  <%= image_tag(wine.wine_url, size: "75x75") %><br>
-  <%= "Name: #{wine.name}" %><br>
-  <%= "Year: #{wine.year}" %><br>
-  <%= "Description: #{wine.description}" %><br>
-  <%= button_to "Edit", edit_user_wine_path(@user, wine), class: "button", method: "get" %>
-  <%= button_to "Delete", user_wine_path(@user, wine), class: "button", method: "delete" %>
-<% end %>
+<table class="table table-hover ">
+  <tr>
+    <th>Image</th>
+    <th>Name</th>
+    <th>Year</th>
+    <th>Description</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  <% @wines.each do |wine| %>
+    <tr>
+      <td><div class="img-size-sm"><%= image_tag(wine.wine_url, class: "img-rounded") %></div></td>
+      <td><%= "#{wine.name}" %></td>
+      <td><%= "#{wine.year}" %></td>
+      <td><%= "#{wine.description}" %></td>
+      <td><%= button_to "Edit", edit_user_wine_path(@user, wine), type: "button", class: "btn btn-primary", method: "get" %></td>
+      <td><%= button_to "Delete", user_wine_path(@user, wine), type: "button", class: "btn btn-danger", method: "delete" %></td>
+    </tr>
+  <% end %>
+</table>
 

@@ -1,14 +1,28 @@
 <%= render "navigation" %>
-<%= image_tag @user.picture_url, size: "200x200" %>
-<h1><%= "#{@user.first_name} #{@user.last_name}" %></h1>
-<h2><%= "#{@user.city}, #{@user.state}" %></h2>
-<h2><%= "#{@user.country}" %></h2>
-<%= link_to "See All My Wines...", user_wines_path(@user) %><br>
-<% if !@wines.empty? %>
-  <% @wines.each do |wine| %>
-    <%= "#{wine.name} #{wine.year}" %><br>
-  <% end %>
-<% else %>
-  <h3>No wines are present.</h3>
-<% end %>
-<%= link_to "See All My Friends...", "#" %><br>
+<div id="profile-top">
+  <div class="img-size-lg pull-left">
+    <%= image_tag @user.picture_url, class: "img-rounded" %>
+  </div>
+  <div>
+    <h1><%= "#{@user.first_name} #{@user.last_name}" %></h1>
+    <h1><small><%= "#{@user.city}, #{@user.state}" %></small></h1>
+    <h1><small><%= "#{@user.country}" %></small></h1>
+  </div>
+</div>
+<div id="profile-bottom">
+  <div>
+    <h2><%= link_to "See All My Wines...", user_wines_path(@user) %></h2><br>
+  </div>
+  <div>
+    <% if !@wines.empty? %>
+      <% @wines.each do |wine| %>
+        <%= "#{wine.name} #{wine.year}" %><br>
+     <% end %>
+    <% else %>
+      <h3>No wines are present.</h3>
+    <% end %>
+  </div>
+  <div>
+    <h2><%= link_to "See All My Friends...", "#" %></h2><br>
+  </div>
+</div>

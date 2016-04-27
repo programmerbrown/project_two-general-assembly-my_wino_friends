@@ -1,7 +1,6 @@
 <%= render "navigation" %>
 <h1>Wines | <%= "#{@user.first_name} #{@user.last_name}" %></h1>
-<%= link_to "Add a Wine", new_user_wine_path(@user) %>
-<%= link_to "Go to Profile", user_path(@user) %><br>
+<p><%= link_to "Add a Wine", new_user_wine_path(@user) %> | <%= link_to "Go to Profile", user_path(@user) %></p><br>
 <% if @wines.empty? %>
   <%= render "no_wines_present" %>
 <% else %>
