@@ -1,17 +1,20 @@
-<%= render "navigation" %>
-<div id="profile-top">
-  <div class="img-size-lg pull-left">
-    <%= image_tag @user.picture_url, class: "img-rounded" %>
+<%= render :partial => "layouts/navigation" %>
+
+<h1 class="header">Profile</h1>
+
+<div id="media">
+  <div class="media-left">
+      <%= image_tag @user.picture_url, class: "media-object img-rounded" %>
   </div>
-  <div>
-    <h1><%= "#{@user.first_name} #{@user.last_name}" %></h1>
+  <div class="media-body">
+    <h2 class="media-heading"><%= "#{@user.first_name} #{@user.last_name}" %></h2>
     <h1><small><%= "#{@user.city}, #{@user.state}" %></small></h1>
     <h1><small><%= "#{@user.country}" %></small></h1>
   </div>
 </div>
 <div id="profile-bottom">
   <div>
-    <h2><%= link_to "See All My Wines...", user_wines_path(@user) %></h2><br>
+    <h3><%= link_to "See All My Wines", user_wines_path(@user) %></h3><br>
   </div>
   <div>
     <% if !@wines.empty? %>
@@ -23,6 +26,6 @@
     <% end %>
   </div>
   <div>
-    <h2><%= link_to "See All My Friends...", "#" %></h2><br>
+    <h3><%= link_to "See All My Friends", "#" %></h3><br>
   </div>
 </div>

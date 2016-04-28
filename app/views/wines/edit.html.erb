@@ -1,17 +1,24 @@
-<%= render "navigation" %>
+<%= render :partial => "layouts/navigation" %>
+
+<h2 class="header">Edit a Wine</h2>
 
 <%= form_for [@user, @wine] do |f| %>
-  <%= f.label "Name" %><br>
-  <%= f.text_field :name %><br>
-
-  <%= f.label "Year" %><br>
-  <%= f.text_field :year %><br>
-
-  <%= f.label "Description" %><br>
-  <%= f.text_field :description %><br>
-
-  <%= f.label "Wine Picture URL" %><br>
-  <%= f.text_field :wine_url %><br>
-
-  <%= f.submit "Save" %>
+  <div class="form-group"
+    <%= f.label "Name" %><br>
+    <%= f.text_field :name, class: "form-control" %><br>
+  </div>
+  <div class="form-group">
+    <%= f.label "Year" %><br>
+    <%= f.text_field :year, class: "form-control" %><br>
+  </div>
+  <div class="form-group">
+    <%= f.label "Description" %><br>
+    <%= f.text_field :description, class: "form-control" %><br>
+  </div>
+  <div class="form-group">
+    <%= f.label "Wine Picture URL" %><br>
+    <%= f.text_field :wine_url, class: "form-control" %><br>
+  </div>
+  <%= f.submit "Save", class: "btn btn-primary btn-lg" %>
+  <%= f.submit "Cancel", class: "btn btn-default btn-lg" %>
 <% end %>
