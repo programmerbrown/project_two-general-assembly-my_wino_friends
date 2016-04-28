@@ -29,6 +29,9 @@ gem 'bcrypt', '~> 3.1.7'
 # Use PostgreSQL for my development, test environments
 gem 'pg'
 
+# User paperclip gem to allow users to upload files
+gem 'paperclip'
+
 # Devise gem for user authentication
 gem 'devise'
 
