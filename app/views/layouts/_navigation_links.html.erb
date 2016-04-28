@@ -5,7 +5,7 @@
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button">Settings <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><%= link_to "Edit Profile", edit_user_path(current_user) %></li>
-            <li><%= link_to 'Change Email and Password/Delete Profile', edit_user_registration_path %></li>
+            <li><%= link_to 'Email | Password | Delete Account', edit_user_registration_path %></li>
             <li role="separator" class="divider"></li>
             <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
           </ul>
