@@ -31,7 +31,7 @@ gem 'pg'
 
 # User paperclip gem to allow users to upload files
 gem 'paperclip'
-gem 'aws-sdk'
+gem 'aws-sdk', '< 2'
 # Devise gem for user authentication
 gem 'devise'
 
