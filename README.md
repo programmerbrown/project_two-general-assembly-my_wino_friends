@@ -9,13 +9,13 @@ _Summary:_
 Hello! This is my second app as a student at General Assembly.
 
 _Technologies and Gems Used:_
-Rails 4.2.1
-PostgreSQL
-Bootstrap 3
-JQuery
-Paperclip - a ruby gem used to upload files
-Devise - a ruby gem used to manage user authentication and authorization
-AWS-SDK - a ruby gem used in interfacing with Amazon Web Services
+* Rails 4.2.1
+* PostgreSQL
+* Bootstrap 3
+* JQuery
+* Paperclip - a ruby gem used to upload files
+* Devise - a ruby gem used to manage user authentication and authorization
+* AWS-SDK - a ruby gem used in interfacing with Amazon Web Services
 
 _My Wino Friends:_
 My Wino Friends is a social networking app that allows individuals to catalog and share their favorite wines.
