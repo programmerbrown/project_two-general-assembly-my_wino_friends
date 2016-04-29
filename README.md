@@ -23,11 +23,14 @@ My inspiration for this app actually came from Goodreads.com which is a social n
 book lovers to connect and share books. I didn't want to copy Goodreads but I did want to build a social networking
 app for a community of people who were passionate around a particular topic or item. So, why not wine!
 
-Trello Board:
+_Trello Board:_
 https://trello.com/b/Pbpxq9L6/my-wino-friends-general-assembly-project-2
 
 _Screen Captures:_
-![](https://octodex.github.com/images/yaktocat.png)
+![Screenshot 1](https://github.com/nickthehustler/project-two-general-assembly-my_wino_friends/blob/master/app/assets/images/Slack%20for%20iOS%20Upload-1.jpg)
+![Screenshot 2](https://github.com/nickthehustler/project-two-general-assembly-my_wino_friends/blob/master/app/assets/images/Slack%20for%20iOS%20Upload-2.jpg)
+![Screenshot 3](https://github.com/nickthehustler/project-two-general-assembly-my_wino_friends/blob/master/app/assets/images/Slack%20for%20iOS%20Upload-3.jpg)
+![Screenshot 4](https://github.com/nickthehustler/project-two-general-assembly-my_wino_friends/blob/master/app/assets/images/Slack%20for%20iOS%20Upload.jpg)
 
 _Main Features:_
 Here is a list of the main features of My Wino Friends:
