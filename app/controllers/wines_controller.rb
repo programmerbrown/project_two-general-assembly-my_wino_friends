@@ -6,7 +6,8 @@ class WinesController < ApplicationController
   end
 
   def show
-
+    @user = User.find(params[:user_id])
+    @wine = @user.wines.find(params[:id])
   end
 
   def new

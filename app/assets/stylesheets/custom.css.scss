@@ -39,9 +39,9 @@ span.glyphicon-alight-justify {
   font-size: 2em;
 }
 
-.header {
+/*.header {
   padding-top: 50px;
-}
+}*/
 
 .form-group {
   width: 400px;
@@ -63,4 +63,14 @@ body {
 #file-input {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+body { padding-top: 70px; }
+
+.wine-media {
+  margin-bottom: 20px;
+}
+
+.inline-btn {
+  margin-bottom: 5px;
 }
