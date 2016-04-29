@@ -33,6 +33,7 @@ _Screen Captures:_
 ![Screenshot 4](https://github.com/nickthehustler/project-two-general-assembly-my_wino_friends/blob/master/app/assets/images/Slack%20for%20iOS%20Upload.jpg)
 
 _Main Features:_
+
 Here is a list of the main features of My Wino Friends:
 * User authentication
 * Create a wine list
@@ -42,9 +43,11 @@ Here is a list of the main features of My Wino Friends:
 * Delete a user profile
 
 _Future Features:_
+
 In the near future, I would like to implement the following additional features:
-* Actual social networking capabilities that
-*
+* Actual social networking capabilities that allow users to connect with and follow each other
+* The ability to comment on a users wines
+* Bug fixes!
 
 
 
