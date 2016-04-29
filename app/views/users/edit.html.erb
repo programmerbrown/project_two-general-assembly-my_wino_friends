@@ -2,7 +2,7 @@
 
 <h2 class="header">Edit User</h2>
 
-<%= form_for @user do |f| %>
+<%= form_for @user, url: users_path, html: { multipart: true } do |f| %>
   <div class="form-group">
     <%= f.label "First Name" %>
     <%= f.text_field :first_name, class: "form-control" %><br>
@@ -24,8 +24,8 @@
     <%= f.text_field :country, class: "form-control" %><br>
   </div>
   <div class="form-group">
-    <%= f.label "Picture URL" %>
-    <%= f.text_field :picture_url, class: "form-control" %><br>
+    <%= f.label "Picture" %>
+    <%= f.file_field :avatar %><br>
   </div>
   <%= f.submit "Edit", class: "btn btn-primary btn-lg" %>
   <%= f.submit "Cancel", class: "btn btn-default btn-lg" %>

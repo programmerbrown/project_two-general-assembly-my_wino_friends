@@ -4,28 +4,33 @@
 
 <div id="media">
   <div class="media-left">
-      <%= image_tag @user.picture_url, class: "media-object img-rounded" %>
+    <%= image_tag @user.avatar.url(:medium) %>
   </div>
   <div class="media-body">
-    <h2 class="media-heading"><%= "#{@user.first_name} #{@user.last_name}" %></h2>
-    <h1><small><%= "#{@user.city}, #{@user.state}" %></small></h1>
-    <h1><small><%= "#{@user.country}" %></small></h1>
+    <h2 class="media-heading"><%= "#{@user.first_name.capitalize} #{@user.last_name.capitalize}" %></h2>
+    <h1><small><%= "#{@user.city.capitalize} #{@user.state.capitalize}" %></small></h1>
+    <h1><small><%= "#{@user.country.upcase}" %></small></h1>
   </div>
 </div>
-<div id="profile-bottom">
-  <div>
-    <h3><%= link_to "See All My Wines", user_wines_path(@user) %></h3><br>
-  </div>
-  <div>
-    <% if !@wines.empty? %>
+<div>
+  <h3><%= link_to "My Wines", user_wines_path(@user) %></h3>
+</div>
+<div>
+  <% if !@wines.empty? %>
+    <h4>Wines List</h4>
+    <table class="table table-condensed table-hover">
+      <tr>
+        <th>Name</th>
+        <th>Year</th>
+      </tr>
       <% @wines.each do |wine| %>
-        <%= "#{wine.name} #{wine.year}" %><br>
+        <tr>
+          <td><%= wine.name %></td>
+          <td><%= wine.year %></td>
+        </tr>
      <% end %>
-    <% else %>
-      <h3>No wines are present.</h3>
-    <% end %>
-  </div>
-  <div>
-    <h3><%= link_to "See All My Friends", "#" %></h3><br>
-  </div>
+   </table>
+  <% else %>
+    <h3>No wines are present.</h3>
+  <% end %>
 </div>
