@@ -15,9 +15,9 @@
     <%= f.label "Description" %><br>
     <%= f.text_field :description, class: "form-control" %><br>
   </div>
-  <div class="form-group">
-    <%= f.label "Wine Picture URL" %><br>
-    <%= f.text_field :wine_url, class: "form-control" %><br>
+  <div class="field form-group">
+    <%= f.label "Picture" %>
+    <%= f.file_field :avatar %><br>
   </div>
   <%= f.submit "Save", class: "btn btn-primary btn-lg" %>
   <%= f.submit "Cancel", class: "btn btn-default btn-lg" %>
