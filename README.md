@@ -4,10 +4,6 @@
 
 ### April 29 2016
 
-_Summary:_
-
-Hello! This is my second app as a student at General Assembly.
-
 _Technologies and Gems Used:_
 * Rails 4.2.1
 * PostgreSQL
@@ -17,13 +13,15 @@ _Technologies and Gems Used:_
 * Devise - a ruby gem used to manage user authentication and authorization
 * AWS-SDK - a ruby gem used in interfacing with Amazon Web Services
 
-_My Wino Friends:_
+_Description of My App - My Wino Friends:_
+
 My Wino Friends is a social networking app that allows individuals to catalog and share their favorite wines.
 My inspiration for this app actually came from Goodreads.com which is a social networking app that allows
 book lovers to connect and share books. I didn't want to copy Goodreads but I did want to build a social networking
 app for a community of people who were passionate around a particular topic or item. So, why not wine!
 
 _Trello Board:_
+
 https://trello.com/b/Pbpxq9L6/my-wino-friends-general-assembly-project-2
 
 _Screen Captures:_
